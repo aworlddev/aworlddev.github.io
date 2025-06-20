@@ -1,0 +1,321 @@
+@font-face {
+  font-family: HGRSMP;
+  src: url("./font/hgrsmp.ttf");
+}
+@font-face {
+  font-family: HGRSGU;
+  src: url("./font/hgrsgu.ttf");
+}
+@font-face {
+  font-family: HGRSGUMEDIUM;
+  src: url("./font/hgrsgu-normal.ttf");
+}
+@font-face {
+  font-family: HGRSKP;
+  src: url("./font/hgrskp.ttf");
+}
+@font-face {
+  font-family: HGRPRE;
+  src: url("./font/HGrPrE.ttf");
+}
+@font-face {
+  font-family: HGRGE;
+  src: url("./font/hgrge.ttf");
+}
+@font-face {
+  font-family: HGRPP1;
+  src: url("./font/hgrpp1.ttf");
+}
+
+:root {
+  --color-pink: rgb(170, 18, 17);
+}
+
+/* defautl */
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*:hover {
+  transition: all 0.4s;
+}
+.table td,
+.table th {
+  vertical-align: middle;
+}
+p {
+  margin-bottom: 0;
+}
+a {
+  color: var(--color-text);
+  transition: all 0.4s;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+img {
+  max-width: 100%;
+}
+
+.text-white {
+  color: white;
+}
+
+body {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  background-image: url("../images/backgr.jpg");
+  background-size: cover;
+}
+body {
+  font-size: 20px;
+  font-family: HGRSGUMEDIUM;
+  letter-spacing: 0.1rem;
+}
+header {
+  padding: 60px 0 20px;
+  position: relative;
+}
+header .wrapper {
+  background-color: #f0f4f6;
+  border-top: 10px solid var(--color-pink);
+  border-bottom: 10px solid var(--color-pink);
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+header .text {
+  color: var(--color-pink);
+  text-align: center;
+  width: 50%;
+}
+header .text h2 {
+  font-weight: bold;
+}
+header .text h1 {
+  font-family: HGRPP1;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+header .text h2 img {
+  height: 2rem;
+}
+header .logo {
+  width: 20%;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  align-items: flex-start;
+}
+header .logo p {
+  font-family: HGRSMP;
+  letter-spacing: unset !important;
+}
+header .logo p span {
+  font-size: 60%;
+  display: block;
+}
+header .bow {
+  width: 20%;
+}
+header .bow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  letter-spacing: 0.1rem;
+  padding-bottom: 20px;
+}
+
+.images {
+  background-color: rgb(220, 34, 23);
+  padding: 10px 5%;
+  border-top: 2px solid var(--color-pink);
+  border-bottom: 2px solid var(--color-pink);
+  box-shadow: 1px 1px 9px 0px rgba(255, 255, 255, 0.75) inset;
+  -webkit-box-shadow: 1px 1px 9px 0px rgba(255, 255, 255, 0.75) inset;
+  -moz-box-shadow: 1px 1px 9px 0px rgba(255, 255, 255, 0.75) inset;
+  display: flex;
+}
+.images > img {
+  max-height: 280px;
+  flex: 1 1 auto;
+}
+
+.images .group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+.images .group img {
+  max-height: 140px;
+}
+.image-description {
+  text-align: center;
+  padding: 0 5%;
+}
+.image-description p {
+  background-color: rgb(220, 34, 23);
+  padding: 10px 5%;
+  font-size: 30px;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  border-bottom: 2px solid var(--color-pink);
+  border-right: 2px solid var(--color-pink);
+  border-left: 2px solid var(--color-pink);
+}
+
+.flight {
+  padding: 10px 5%;
+  display: flex;
+}
+.flight img {
+  width: 200px;
+}
+.flight h2 {
+  color: var(--color-pink);
+  font-family: HGRPP1;
+  font-size: 50px;
+  text-align: center;
+  flex: 1 1 auto;
+  padding-top: 20px;
+}
+
+.about {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 5%;
+}
+.about .wiki {
+  width: 35%;
+  border: 5px solid rgb(139, 207, 250);
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+  padding: 20px 15px;
+  font-family: HGRSMP;
+  text-align: justify;
+  margin-right: 20px;
+}
+.about .wiki .image {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.about .wiki .image span {
+  margin-top: 10px;
+}
+.about .wiki p {
+  font-size: 14px;
+}
+.about .wiki .source-image {
+  padding: 0 20px;
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.about .source {
+  margin-top: -50px;
+  width: 35%;
+  background-color: rgb(211, 102, 148);
+  color: white;
+  padding: 40px 15px;
+  border-radius: 20px;
+}
+
+.about .source h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.about .source p:nth-of-type(2) {
+  margin: 20px 0;
+  font-family: HGRSMP;
+}
+
+.about .img {
+  background-color: #ffffff7a;
+  width: 30%;
+  padding: 20px 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.about .img h3 {
+  display: block;
+  margin: 0 auto 20px auto;
+  color: var(--color-pink);
+  border: 2px solid var(--color-pink);
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 20px;
+  font-family: HGRPP1;
+  width: fit-content;
+}
+.about .img p {
+  color: var(--color-pink);
+}
+.about .img p:nth-of-type(1) {
+  margin: 20px 0;
+}
+.about .img .wrap {
+  display: flex;
+  gap: 10px;
+}
+.about .img .wrap img {
+  max-height: 170px;
+  flex: auto;
+}
+
+footer {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+}
+footer .left {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  color: var(--color-pink);
+  font-size: 30px;
+  line-height: 35px;
+}
+footer .left img {
+  max-height: 70px;
+  margin: 0 20px;
+}
+
+footer .right {
+  display: flex;
+  align-items: center;
+}
+footer .right p {
+  border-left: 3px solid rgb(208, 98, 145);
+  border-top: 3px solid rgb(208, 98, 145);
+  border-bottom: 3px solid rgb(208, 98, 145);
+  padding: 5px 20px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  color: rgb(208, 98, 145);
+}
+footer .right img {
+  border: 3px solid rgb(208, 98, 145);
+}
